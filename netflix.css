@@ -1,0 +1,347 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(back-image.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8px;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    margin-left: 166px;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background-color: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+   
+}
+.btn1{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+    margin-right: 11px;
+    width: 92px
+}
+.btn1 img{
+    width: 10px;
+    margin-left: 10px;
+}
+.btn2{
+    margin-right: 222px;
+}
+  .header-content{
+    text-align: center;
+    margin-top: 200px;
+    margin-left:5%;
+    font-size: 25px;
+  }
+  .email-signup{
+     height: 3rem;
+     width: 400px;
+     border-radius: 7px;
+     margin-left: -19%;
+     color: white;
+     background-color: transparent;
+    font-size: 18px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    }
+.btn3{
+    height:3rem ;
+    width: 200px;
+    border-radius: 7px;
+    background-color: #db0001;
+    color: #fff;
+    border-color: #db0001;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.header2{
+    width:100%;
+    height:35rem;
+    display: flex;
+}
+
+
+.header3 h1{
+    margin-left: 180px;
+    margin-top: 200px;
+    word-spacing: -5px;
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 61px;
+}
+.header3 h3{
+    margin-left: 180px;
+    word-spacing: 2px;
+    line-height: 28px;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.header4{
+    margin-left: 122px;
+    width: 588px;
+    margin-top: 6%;
+  }
+  .division1{
+    width:100%;
+    height:35rem;
+    display: flex;
+}
+.header5{
+    margin-left: 125px;
+    width: 477px;
+    margin-top: 17%;
+}
+
+
+.header6 h1{
+    margin-left: 97px;
+    margin-top: 138px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.header6 h3{
+    margin-left: 110px;
+    word-spacing: 2px;
+    line-height: 28px;
+    margin-top: 1px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.header7{
+    width:100%;
+    height:35rem;
+    display: flex;
+}
+
+
+.header8 h1{
+    margin-left: 180px;
+    margin-top: 200px;
+    word-spacing: -5px;
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 61px;
+}
+.header8 h3{
+    margin-left: 180px;
+    word-spacing: 2px;
+    line-height: 28px;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.header9{
+    margin-left: 122px;
+    width: 588px;
+    margin-top: 6%;
+  }
+ 
+  .division2{
+    width:100%;
+    height:35rem;
+    display: flex;
+}
+.header10{
+    margin-left: 125px;
+    width: 477px;
+    margin-top: 17%;
+}
+
+
+.header11 h1{
+    margin-left: 97px;
+    margin-top: 138px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.header11 h3{
+    margin-left: 110px;
+    word-spacing: 2px;
+    line-height: 28px;
+    margin-top: 1px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+    }
+    .accordion{
+        margin: 60px auto;
+        width: 100%;
+        max-width: 750px;
+    }
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+display: flex;
+align-items: center;
+padding: 20px;
+font-size: 18px;
+font-weight: 500;
+background: #303030;
+margin-bottom: 2px;
+cursor: pointer;
+position: relative;
+}
+
+label::after{
+    content:'+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+
+}
+input[type="radio"]{
+display: none;
+
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+    }
+    .accordion input[type="radio"]:checked +label + .content{
+        max-height: 600px;
+        padding: 30px 20px;
+    }
+    .accordion input[type="radio"]:checked +label::after{
+        transform: rotate(135deg);
+    }
+
+    .email-signup2{
+        height: 3rem;
+        width: 400px;
+        border-radius: 7px;
+        margin-left: 30%;
+        color: white;
+        background-color: transparent;
+       font-size: 18px;
+       box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+       }
+   .btn4{
+       height:3rem ;
+       width: 200px;
+       border-radius: 7px;
+       background-color: #db0001;
+       color: #fff;
+       border-color: #db0001;
+       font-size: 18px;
+       cursor: pointer;
+   }
+   small{
+    margin-left: 28%;
+    font-size: 21px;
+    margin-top: -45px;
+    float: left;
+   }
+
+   .footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+  }
+  
+  .footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  .footer .row {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding: 10px 0;
+    text-decoration: underline;
+    color: #d4cece;
+
+  }
+  
+  .footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+  }
+  
+  .footer .col a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .btn5{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 7px 10px;
+    margin-right: 11px;
+    width: 99px;
+    font-size: 15px;
+
+    
+}
+.btn5 img{
+    width: 10px;
+    margin-left: 10px;
+}
+.paragraph{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+  
+
+
+
